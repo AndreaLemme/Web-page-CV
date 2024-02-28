@@ -1,0 +1,273 @@
+@font-face {
+  font-family: 'Antonio Bold';
+  src: url('../antonio/Antonio-Bold.ttf') format('truetype'); /* Adjust the path if needed */
+  font-weight: bold;
+  font-style: normal;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .header {
+    display: flex;
+    /*background-color: #98B4B2;*/
+    padding: 10px;
+    color: white;
+    justify-content: space-between;
+  }
+  
+  nav {
+    display: flex;
+    text-align: center;
+    align-content: center;
+    margin-left: 25%;
+    background-color: #98B4B2;
+    padding: 25px;
+    font-family: 'Antonio Bold', sans-serif;
+   
+    
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    
+  }
+  
+  nav li {
+    margin-right: 40px;
+    font-size: 30px;
+    font-weight: bold;
+  }
+  
+  nav a {
+    text-decoration:none;
+    color: white;
+    transition: all 0.3s ease-in-out;
+  }
+  nav a:hover {
+    color: lightsteelblue; /* Change the color on hover */
+  }
+  .left-panel {
+    background-color:grey;
+    width: 360px;
+    position: fixed;
+    height: 125%;
+    overflow-y: scroll;
+    left:0;
+    top:0;
+
+  }
+  .left-panel::-webkit-scrollbar {
+    width: 0px; /* Hide horizontal scrollbar */
+    height: 0px; /* Hide vertical scrollbar */
+  }
+  
+  .left-panel::-webkit-scrollbar-thumb {
+    background: transparent; /* Transparent thumb for visual indication */
+  }
+  
+  .left-panel:hover::-webkit-scrollbar {
+    width: 5px; /* Show scrollbar on hover for accessibility */
+    height: 5px; /* Show scrollbar on hover for accessibility */
+  }
+  
+  .left-panel:hover::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.2); /* Darker background for visibility on hover */
+  }
+
+  #aboutMe {
+
+    letter-spacing: 1.5px;
+    font-weight: normal;
+    line-height: 25px;
+    
+  }
+#content{
+  background-color:grey;
+    padding:20px;
+    width: 320px;
+    height: 110%;
+    overflow-y: hidden;
+   
+}
+
+#imgContainer {
+  position: relative; /* Enable relative positioning for the element */
+width:360px;
+  /*height: 200px; /* Adjust height as needed */
+  overflow: hidden; /* Clip overflowing content if image is larger than container */
+  
+}
+
+#imgContainer img {
+  position: absolute; /* Make the image absolute inside the imgContainer */
+  top: 0; /* Position the image at the top of the element */
+  left: 0; /* Position the image at the left of the element */
+  width: 100%; /* Set image width to 100% of its container (imgContainer) */
+  height: 100%; /* Set image height to 100% of its container (imgContainer) */
+  object-fit: cover; /* Ensure the image covers the entire area while maintaining aspect ratio */
+}
+
+  
+  .left-panel h2 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 33px;
+    font-family: 'Antonio Bold', sans-serif;
+  }
+  .main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px; /* Adjust the margin to leave space for the header */
+  }
+
+  .main-content  h2 {
+    font-family: 'Antonio Bold', sans-serif;
+    text-align: center;
+    font-size: 37.3px;
+    margin-bottom: 1rem;
+    color: #253B3F;
+  }
+  
+  .education-item {
+
+    margin: 20px;
+  }
+
+.education h2{
+  font-family: 'Antonio Bold', sans-serif;
+  text-align: center;
+  font-size: 37.3px;
+  margin-bottom: 1rem;
+  color: #253B3F;
+}
+  
+  .experience-item{
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .content-section {
+    margin: 20px;
+  }
+  
+  .contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .experienceProjects h2{
+    font-family: 'Antonio Bold', sans-serif;
+    text-align: center;
+    font-size: 37.3px;
+    margin-bottom: 1rem;
+    color: #253B3F;
+
+  }
+  .contact-item img {
+    width: 30px; /* Adjust the width as needed */
+    height: 30px; /* Adjust the height as needed */
+    margin-right: 10px;
+  }
+
+  .language-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    letter-spacing: 1.5px;
+  }
+
+  
+  
+  .skills-section {
+    text-align: center; /* Center the heading */
+  }
+  
+  .skills-section h3 {
+    font-family: 'Antonio Bold', sans-serif;
+    text-align: center;
+    font-size: 37.3px;
+    margin-bottom: 1rem;
+    color: #253B3F;
+  }
+  
+  .skill-columns {
+    display: flex; /* Make the columns container a flexbox */
+  }
+  
+  .skills-column {
+    list-style: none; /* Remove default bullet points */
+    padding: 0;
+    margin: 0;
+    width: 50%; /* Set width to 50% for two columns */
+  }
+  
+  .skills-column li {
+    margin-bottom: 0.5rem;
+  }
+  
+  
+  .achievements {
+    /* Style the achievements section */
+    margin: 2rem 0; /* Add some margin for spacing */
+    
+  }
+  
+  .achievements h2 {
+    /* Style the heading */
+    font-family: 'Antonio Bold', sans-serif;
+    text-align: center;
+    font-size: 37.3px;
+    margin-bottom: 1rem;
+    color: #253B3F;
+  }
+  
+  .achievements ul {
+    /* Style the unordered list */
+    list-style: none; /* Remove default bullet points */
+    padding: 0;
+    margin: 0;
+  }
+  
+  .achievements li {
+    /* Style the list items (achievements) */
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    border: 1px solid #ddd; /* Add a border for separation */
+    border-radius: 4px; /* Add rounded corners */
+  }
+  
+  .achievements li h3 {
+    /* Style the year heading */
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .achievements li p {
+    /* Style the achievement description */
+    font-size: 0.8rem;
+  }
+  .education-details {
+    display: flex;
+    margin-left: 35%;
+  }
+
+  .info-wrapper {
+    margin-left: 20px; /* Adjust spacing between year and info */
+  }
+  
+  .place {
+    font-style: italic; /* Optional: style the place information */
+  }
+  
+  .description-list {
+    margin-top: 10px; /* Adjust spacing between info and description */
+    margin-left:20%;
+  }
