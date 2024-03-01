@@ -22,7 +22,7 @@ const contact = [
     {
         id:'linkedin',
         img: '../assets/linkedin.png',
-        name: "@Andrealemme",
+        name: "<a id='linkedin-link' href='https://www.linkedin.com/in/andrea-lemme-64a7b419a' target='_blank'>@Andrealemme</a>",
     },
 
 ];

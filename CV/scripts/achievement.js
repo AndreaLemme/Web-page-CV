@@ -8,41 +8,43 @@ navLinks.forEach(link => {
   }
 });
 
-const contact = [
-    {
-        id: 'email',
-        img: '../assets/email.png',
-        name: "andrea24081@gmail.com",
-    },
-    {
-        id: 'phone',
-        img: '../assets/phone.png',
-        name: "(+27) 62-203-8008",
-    },
-    {
-        id:'linkedin',
-        img: '../assets/linkedin.png',
-        name: "@Andrealemme",
-    },
 
-];
-
-function initializeContact() {
-    const contactListElement = document.getElementById("contactContainer");
-
-    contact.forEach(item => {
-        const contactItemElement = document.createElement("div");
-        contactItemElement.classList.add("contact-item");
-    
-        contactItemElement.innerHTML = `
-          <img src="${item.img}" alt="Contact Image">
-          <p>${item.name}</p>
-        `;
-    
-        contactListElement.appendChild(contactItemElement);
-      });
-    }
-    initializeContact();
+  
+  const contact = [
+      {
+          id: 'email',
+          img: '../assets/email.png',
+          name: "andrea24081@gmail.com",
+      },
+      {
+          id: 'phone',
+          img: '../assets/phone.png',
+          name: "(+27) 62-203-8008",
+      },
+      {
+          id:'linkedin',
+          img: '../assets/linkedin.png',
+          name: "<a id='linkedin-link' href='https://www.linkedin.com/in/andrea-lemme-64a7b419a' target='_blank'>@Andrealemme</a>",
+      },
+  
+  ];
+  
+  function initializeContact() {
+      const contactListElement = document.getElementById("contactContainer");
+  
+      contact.forEach(item => {
+          const contactItemElement = document.createElement("div");
+          contactItemElement.classList.add("contact-item");
+      
+          contactItemElement.innerHTML = `
+            <img src="${item.img}" alt="Contact Image">
+            <p>${item.name}</p>
+          `;
+      
+          contactListElement.appendChild(contactItemElement);
+        });
+      }
+      initializeContact();
 
 const languages = [
     {

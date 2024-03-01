@@ -22,7 +22,7 @@ const contact = [
     {
         id:'linkedin',
         img: '../assets/linkedin.png',
-        name: "@Andrealemme",
+        name: "<a id='linkedin-link' href='https://www.linkedin.com/in/andrea-lemme-64a7b419a' target='_blank'>@Andrealemme</a>",
     },
 
 ];
@@ -132,6 +132,17 @@ function initializeLanguages() {
             "Built both ReactJS and Angular applications",
         ],
     },
+    {
+      year: 2024,
+      name: "ReactJS 101",
+      place: "Code Academy",
+      description: [
+        "Learnt about JSX, React Components, Hooks, Forms, Programming Patterns and Styles",
+        "Course gave me a deep introductory understanding for react",
+        "Completed projects related to developing forums, online food order system, identity form and more"
+
+      ],
+    }
   ];
 
   function initializeEducation() {

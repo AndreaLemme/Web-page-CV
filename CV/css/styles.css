@@ -12,6 +12,16 @@
   font-style: normal;
 }
 
+#linkedin-link {
+  color: white;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+#linkedin-link:hover {
+  color: blue; /* Change color to red on hover */
+}
+
 *::-webkit-scrollbar {
   width: 0px; /* Hide horizontal scrollbar */
   height: 0px; /* Hide vertical scrollbar */
@@ -29,6 +39,8 @@
 *:hover::-webkit-scrollbar-thumb {
   background: rgba(0, 0, 0, 0.2); /* Darker background for visibility on hover */
 }
+
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -46,7 +58,7 @@ body {
     display: flex;
     text-align: center;
     align-content: center;
-    margin-left: 25%;
+    margin-left: 27%;
     background-color: #98B4B2;
     padding: 25px;
     font-family: 'Antonio Bold', sans-serif;
@@ -112,7 +124,7 @@ body {
     
   }
 #content{
-  background-color:grey;
+  background-color:#191919;
     padding:20px;
     width: 320px;
     height: 110%;
@@ -210,11 +222,11 @@ width:360px;
 
 .experience-details {
   display: flex;
-  margin-left: 35%;
+  margin-left: 20%;
 }
 
 .experience-wrapper {
-  margin-left: 40px;
+  margin-left: 30px;
 }
 
 .location {
@@ -223,7 +235,7 @@ width:360px;
 
 .experience-list {
   margin-top: 10px; /* Adjust spacing between info and description */
-  margin-left:40%;
+  margin-left:25%;
 }
 
 .experience-list li {
