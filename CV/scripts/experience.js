@@ -1,12 +1,22 @@
+const navLinks=document.querySelectorAll("nav a");
+
+
+navLinks.forEach(link => {
+  // Check if the current page's URL matches the href attribute of the link
+  if (link.href === window.location.href) {
+    link.style.color = "#ddd"; // Change the color to a lighter one
+  }
+});
+
 const contact = [
     {
         id: 'email',
-        img: 'email.png',
+        img: '../assets/email.png',
         name: "andrea24081@gmail.com",
     },
     {
         id: 'phone',
-        img: 'phone.png',
+        img: '../assets/phone.png',
         name: "(+27) 62-203-8008",
     },
     {
@@ -58,16 +68,22 @@ function initializeLanguages() {
     languages.forEach(item => {
       const languageItemElement = document.createElement("div");
       languageItemElement.classList.add("language-item");
-  
+    
+      // Apply flexbox to the language item
+      languageItemElement.style.display = "flex";
+      languageItemElement.style.alignItems = "center";
+    
       languageItemElement.innerHTML = `
-        <h3>${item.language}</h3>
-        <p>${item.level}</p>
+        <h3 style="color: white; margin-right: 40px;">${item.language}</h3>
+        <p style="${item.language === 'Italian' ? 'margin-left: 20px;' : ''}">${item.level}</p>
       `;
-  
+    
       languageListElement.appendChild(languageItemElement);
     });
   }
   
+  initializeLanguages();
+
 
 const experienceArray= [
     {
@@ -119,13 +135,17 @@ function initializeExperience() {
       experienceItemElement.classList.add("experience-item");
   
       experienceItemElement.innerHTML = `
-        <h3>${item.time}</h3>
+      <div class="experience-details">
+      <h3>${item.time}</h3>
+      <div class="experience-wrapper">
         <h4>${item.job}</h4>
-        <p>${item.location}</p>
-        <ul>
-          ${item.details.map(desc => `<li>${desc}</li>`).join('')}
-        </ul>
-      `;
+        <p class="place">${item.location}</p>
+      </div>
+    </div>
+    <ul class="experience-list">
+      ${item.details.map(desc => `<li>${desc}</li>`).join('')}
+    </ul>
+      `; 
   
       experienceListElement.appendChild(experienceItemElement);
     });

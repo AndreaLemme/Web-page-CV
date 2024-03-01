@@ -1,10 +1,34 @@
 @font-face {
   font-family: 'Antonio Bold';
-  src: url('../antonio/Antonio-Bold.ttf') format('truetype'); /* Adjust the path if needed */
+  src: url('../fonts/antonio/Antonio-Bold.ttf') format('truetype'); /* Adjust the path if needed */
   font-weight: bold;
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Monsterat';
+  src: url('../fonts/Monsterrat/Montserrat-VariableFont_wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+*::-webkit-scrollbar {
+  width: 0px; /* Hide horizontal scrollbar */
+  height: 0px; /* Hide vertical scrollbar */
+}
+
+*::-webkit-scrollbar-thumb {
+  background: transparent; /* Transparent thumb for visual indication */
+}
+
+*:hover::-webkit-scrollbar {
+  width: 5px; /* Show scrollbar on hover for accessibility */
+  height: 5px; /* Show scrollbar on hover for accessibility */
+}
+
+*:hover::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.2); /* Darker background for visibility on hover */
+}
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -130,29 +154,84 @@ width:360px;
   .main-content  h2 {
     font-family: 'Antonio Bold', sans-serif;
     text-align: center;
-    font-size: 37.3px;
+    font-size: 50px;
     margin-bottom: 1rem;
     color: #253B3F;
   }
   
   .education-item {
-
     margin: 20px;
+    font-family: 'Monsterat', sans-serif;
   }
 
-.education h2{
-  font-family: 'Antonio Bold', sans-serif;
-  text-align: center;
-  font-size: 37.3px;
-  margin-bottom: 1rem;
-  color: #253B3F;
+  .education-item .place {
+    color: #719996;
+  }
+ 
+.education-item h3 {
+  color: #719996;
+}
+
+
+.education-details {
+  display: flex;
+  margin-left: 35%;
+}
+
+.info-wrapper {
+  margin-left: 40px; 
+}
+
+.place {
+  font-style: italic; /* Optional: style the place information */
+}
+
+.description-list {
+  margin-top: 10px; /* Adjust spacing between info and description */
+  margin-left:40%;
+}
+
+.description-list li {
+  margin-bottom: 1rem; 
 }
   
-  .experience-item{
-    text-align: center;
-    margin: 20px;
-  }
-  
+.experience-item {
+  margin: 20px;
+  font-family: 'Monsterat', sans-serif;
+}
+
+.experience-item .location {
+  color: #719996;
+}
+
+.experience-item h3 {
+  color: #719996; /* Adjust color if needed */
+}
+
+.experience-details {
+  display: flex;
+  margin-left: 35%;
+}
+
+.experience-wrapper {
+  margin-left: 40px;
+}
+
+.location {
+  font-style: italic;
+}
+
+.experience-list {
+  margin-top: 10px; /* Adjust spacing between info and description */
+  margin-left:40%;
+}
+
+.experience-list li {
+  margin-bottom: 1rem;
+}
+
+
+
   .content-section {
     margin: 20px;
   }
@@ -163,14 +242,6 @@ width:360px;
     margin-bottom: 10px;
   }
 
-  .experienceProjects h2{
-    font-family: 'Antonio Bold', sans-serif;
-    text-align: center;
-    font-size: 37.3px;
-    margin-bottom: 1rem;
-    color: #253B3F;
-
-  }
   .contact-item img {
     width: 30px; /* Adjust the width as needed */
     height: 30px; /* Adjust the height as needed */
@@ -187,7 +258,8 @@ width:360px;
   
   
   .skills-section {
-    text-align: center; /* Center the heading */
+    font-family: 'Monsterat', sans-serif;
+
   }
   
   .skills-section h3 {
@@ -200,74 +272,41 @@ width:360px;
   
   .skill-columns {
     display: flex; /* Make the columns container a flexbox */
-  }
-  
-  .skills-column {
-    list-style: none; /* Remove default bullet points */
-    padding: 0;
-    margin: 0;
-    width: 50%; /* Set width to 50% for two columns */
+   
   }
   
   .skills-column li {
-    margin-bottom: 0.5rem;
-  }
-  
-  
-  .achievements {
-    /* Style the achievements section */
-    margin: 2rem 0; /* Add some margin for spacing */
-    
-  }
-  
-  .achievements h2 {
-    /* Style the heading */
-    font-family: 'Antonio Bold', sans-serif;
-    text-align: center;
-    font-size: 37.3px;
-    margin-bottom: 1rem;
-    color: #253B3F;
-  }
-  
-  .achievements ul {
-    /* Style the unordered list */
-    list-style: none; /* Remove default bullet points */
-    padding: 0;
-    margin: 0;
-  }
-  
-  .achievements li {
-    /* Style the list items (achievements) */
     margin-bottom: 1.5rem;
-    padding: 1rem;
-    border: 1px solid #ddd; /* Add a border for separation */
-    border-radius: 4px; /* Add rounded corners */
-  }
-  
-  .achievements li h3 {
-    /* Style the year heading */
-    font-size: 1rem;
-    margin-bottom: 0.5rem;
-  }
-  
-  .achievements li p {
-    /* Style the achievement description */
-    font-size: 0.8rem;
-  }
-  .education-details {
-    display: flex;
-    margin-left: 35%;
+    margin-left: 20%;
+
   }
 
-  .info-wrapper {
-    margin-left: 20px; /* Adjust spacing between year and info */
+  
+
+  .achievement-item h4,h3 {
+    color: #719996;
+  }
+
+  .achievement-item {
+    margin: 20px;
+    font-family: 'Monsterat', sans-serif;
   }
   
-  .place {
-    font-style: italic; /* Optional: style the place information */
+  .achievement-details {
+    display: flex;
+    margin-left: 15%; /* Adjust spacing as needed */
   }
   
-  .description-list {
-    margin-top: 10px; /* Adjust spacing between info and description */
-    margin-left:20%;
+  .achievement-wrapper {
+    margin-left: 40px; /* Adjust spacing between date and award */
+  }
+  
+  .achievement-list {
+    margin-top: 10px; /* Adjust spacing between award and list */
+    margin-left: 20%; /* Adjust list indentation */
+    margin-right: 20%;
+  }
+  
+  .achievement-list li {
+    margin-bottom: 1rem; /* Adjust spacing between list items */
   }

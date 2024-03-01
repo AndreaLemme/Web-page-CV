@@ -74,7 +74,7 @@ function initializeLanguages() {
       languageItemElement.style.alignItems = "center";
     
       languageItemElement.innerHTML = `
-        <h3 style="margin-right: 40px;">${item.language}</h3>
+        <h3 style="color: white; margin-right: 40px;">${item.language}</h3>
         <p style="${item.language === 'Italian' ? 'margin-left: 20px;' : ''}">${item.level}</p>
       `;
     
